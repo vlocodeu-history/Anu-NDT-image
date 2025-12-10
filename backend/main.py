@@ -29,10 +29,10 @@ print("SUPABASE_SERVICE_ROLE (first 10) =", (SUPABASE_KEY))
 logger = logging.getLogger("ndt-image")
 logger.setLevel(logging.INFO)
 # Set Google credentials path
-if not os.getenv("GOOGLE_APPLICATION_CREDENTIALS"):
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = (
-        r"D:\streamlit\env\NDT-image\image-extract-476710-c6a143e5254f.json"
-    )
+##if not os.getenv("GOOGLE_APPLICATION_CREDENTIALS"):
+    ## os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = (
+      ##  r"\image-extract-476710-c6a143e5254f.json"
+    ##)
 
 app = FastAPI(title="OCR Nameplate Backend")
 
